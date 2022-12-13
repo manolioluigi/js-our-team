@@ -29,3 +29,8 @@ let team = [{
     image: "barbara-ramos-graphic-designer.jpg"
 }
 ]
+
+for(let i = 0; i<team.length; i++){
+    let teams = team[i];
+    console.log(teams);
+}
