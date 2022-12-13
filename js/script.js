@@ -1,3 +1,18 @@
+//variabili
+
+let contenitore = document.getElementById('contenitore-card');
+let div, teams;
+
+
+function creaDiv(){
+    div = document.createElement('div');
+    div.classList.add('card');
+    div.innerHTML = `<p>${teams.nome}<br>${teams.role}</p> <img src="./img/${teams.image}">`;
+    return div;
+}
+
+//oggetto
+
 let team = [{
     nome: "Wayne Barnett",
     role: "Founder & CEO",
@@ -31,6 +46,12 @@ let team = [{
 ]
 
 for(let i = 0; i<team.length; i++){
-    let teams = team[i];
+
+    //stampa console
+    teams = team[i];
     console.log(teams);
+    //stampa dom
+    creaDiv(teams);
+    contenitore.appendChild(div);
+
 }

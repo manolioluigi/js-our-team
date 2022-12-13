@@ -3,3 +3,57 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: rgb(67, 154, 151);
+}
+
+#contenitore{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(98, 182, 183);
+    justify-content: center;
+    margin-top: 10vh;
+    padding: 10vh;
+}
+
+.card{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    background-color: rgb(151, 222, 206);
+    border-radius: 20px;
+    padding: 20px;
+    color: rgb(40, 88, 87);
+    margin: 10px;
+}
+
+#contenitore-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(98, 182, 183);
+    justify-content: center;
+
+    width: 100%;
+}
+
+img{
+    width: 100px;
+    border: 2px solid;
+    background-color: rgb(40, 88, 87);
+}
+
+.height-full{
+    height: 100vh;
+}
+
+.width-50{
+    width: 50%;
+}
+
